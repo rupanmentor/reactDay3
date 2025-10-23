@@ -7,6 +7,7 @@ import CompA from "./Components/CompA";
 import CompB from "./Components/CompB";
 import CompC from "./Components/CompC";
 import ProductList from "./Components/ProductList";
+import ArrayMethods from "./Components/ArrayMethods";
 
 const App = () => {
   let a = 10;
@@ -41,7 +42,8 @@ const App = () => {
          {/* <CompA a={a}/> */}
          {/* <CompB obj={obj}/> */}
          {/* <CompC arr={arr}/> */}
-         <ProductList  arrObj={arrObj}/>
+         {/* <ProductList  arrObj={arrObj}/> */}
+         <ArrayMethods />
          
     </>
   );
