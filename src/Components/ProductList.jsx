@@ -1,9 +1,18 @@
 import React from 'react';
 
-const ProductList = () => {
+const ProductList = ({arrObj}) => {
     return (
       <>
-        <h1>ProductList</h1>
+        {arrObj.map((ele,index)=>{
+            return(
+                <div key={index} className='card'>
+                    <img src={ele.image} alt="" />
+                    <h1>{ele.name}</h1>
+                    <p>{ele.desc}</p>
+                    <p>{ele.price}</p>
+                </div>
+            )
+        })}
      </>
           
     );

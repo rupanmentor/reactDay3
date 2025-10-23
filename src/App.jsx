@@ -30,7 +30,7 @@ const App = () => {
       price: "$499",
       desc: "This is Ipad Pro",
       image: tab,
-    },
+    }
   ];
 
   return (
@@ -40,7 +40,8 @@ const App = () => {
          <Products name="Tab" price="$499" desc="This is Ipad pro" image={tab}/> */}
          {/* <CompA a={a}/> */}
          {/* <CompB obj={obj}/> */}
-         <CompC arr={arr}/>
+         {/* <CompC arr={arr}/> */}
+         <ProductList  arrObj={arrObj}/>
          
     </>
   );
