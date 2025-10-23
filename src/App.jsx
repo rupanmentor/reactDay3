@@ -8,6 +8,7 @@ import CompB from "./Components/CompB";
 import CompC from "./Components/CompC";
 import ProductList from "./Components/ProductList";
 import ArrayMethods from "./Components/ArrayMethods";
+import FilterReduce from "./Components/FilterReduce";
 
 const App = () => {
   let a = 10;
@@ -33,7 +34,32 @@ const App = () => {
       image: tab,
     }
   ];
-
+  const shopping = [
+     {
+      id:1,
+      name:"Printer",
+      price:5000,
+      category:"Electronics"
+    },
+     {
+      id:2,
+      name:"Scanner",
+      price:5000,
+      category:"Electronics"
+    },
+     {
+      id:3,
+      name:"Carrot",
+      price:50,
+      category:"Grocery"
+    },
+     {
+      id:4,
+      name:"Apple",
+      price:250,
+      category:"Grocery"
+    },
+  ]
   return (
     <>
       {/* <Products name="Iphone" price="$899" desc="This is Iphone 13 pro" image={phone}/>
@@ -43,7 +69,8 @@ const App = () => {
          {/* <CompB obj={obj}/> */}
          {/* <CompC arr={arr}/> */}
          {/* <ProductList  arrObj={arrObj}/> */}
-         <ArrayMethods />
+         {/* <ArrayMethods /> */}
+         <FilterReduce  shopping = {shopping}/>
          
     </>
   );

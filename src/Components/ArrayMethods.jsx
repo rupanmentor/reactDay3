@@ -22,18 +22,29 @@ const ArrayMethods = () => {
 
   const removeUser = () =>{
      //pop
+     const rem = users.pop();
      //console
+     console.log("remove user",rem);
      //foreach
+      users.forEach((ele) => console.log(ele));
   }
+
   const sliceUser = () =>{
     //slice
+    const sli = users.slice(1,4)
     //console
+    console.log(sli);
+    
   }
   
   const spliceUser = ()=>{
     //splice
+    const spli = users.splice(3,2,"raja","rani")
     //splice console
+    console.log(spli);
     //users console
+    console.log(users);
+    
   }
 
   return (
