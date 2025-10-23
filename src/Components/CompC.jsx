@@ -1,10 +1,19 @@
 import React from 'react';
 
-const CompC = () => {
+const CompC = ({arr}) => {
     return (
-        <div>
+        <>
             <h1>Component C</h1>
-        </div>
+         {
+            arr.map((ele,index)=>{
+               return(
+                <div key={index}>
+                    <p>{ele}</p>
+                </div>
+               )
+            })
+         }
+        </>
     );
 };
 

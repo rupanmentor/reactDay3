@@ -3,6 +3,10 @@ import Products from "./Components/Products";
 import phone from "./assets/iphone.png";
 import lap from "./assets/laptop.png";
 import tab from "./assets/tab.png";
+import CompA from "./Components/CompA";
+import CompB from "./Components/CompB";
+import CompC from "./Components/CompC";
+import ProductList from "./Components/ProductList";
 
 const App = () => {
   let a = 10;
@@ -34,6 +38,10 @@ const App = () => {
       {/* <Products name="Iphone" price="$899" desc="This is Iphone 13 pro" image={phone}/>
         <Products name="Laptop" price="$1000" desc="This is Azus Laptop" image={lap}/>
          <Products name="Tab" price="$499" desc="This is Ipad pro" image={tab}/> */}
+         {/* <CompA a={a}/> */}
+         {/* <CompB obj={obj}/> */}
+         <CompC arr={arr}/>
+         
     </>
   );
 };
