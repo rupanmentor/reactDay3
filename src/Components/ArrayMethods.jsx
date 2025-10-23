@@ -25,6 +25,16 @@ const ArrayMethods = () => {
      //console
      //foreach
   }
+  const sliceUser = () =>{
+    //slice
+    //console
+  }
+  
+  const spliceUser = ()=>{
+    //splice
+    //splice console
+    //users console
+  }
 
   return (
     <>
@@ -40,8 +50,8 @@ const ArrayMethods = () => {
       </ul>
       <button onClick={addUser}>Add</button>
       <button onClick={removeUser}>Remove</button>
-      <button>Slice</button>
-      <button>Splice</button>
+      <button onClick={sliceUser}>Slice</button>
+      <button onClick={spliceUser}>Splice</button>
     </>
   );
 };
